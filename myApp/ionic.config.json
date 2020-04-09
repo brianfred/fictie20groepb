@@ -1,0 +1,11 @@
+{
+  "name": "myApp",
+  "integrations": {},
+  "type": "angular",
+  "proxies": [
+    {
+      "path": "/tabs",
+      "proxyUrl": "https://localhost:44342/api/PrestatieIndicatoren"
+    }
+  ]
+}

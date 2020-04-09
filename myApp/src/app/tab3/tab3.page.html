@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Activiteiten Rooster
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Activiteiten Rooster</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <app-explore-container></app-explore-container>
+  <ion-grid [hidden]="activiteitService.notDone">
+    ID: {{activiteitService.activiteitSpecific.activiteitenRoosterID}} <br>
+    Naam: {{activiteitService.activiteitSpecific.naam}} <br>
+    Week 1 Formatief: {{activiteitService.activiteitSpecific.week1form}} <br>
+    Week 1 Summatief: {{activiteitService.activiteitSpecific.week1sum}} <br>
+    Week 2 Formatief: {{activiteitService.activiteitSpecific.week2form}} <br>
+    Week 2 Summatief: {{activiteitService.activiteitSpecific.week2sum}} <br>
+    Week 3 Formatief: {{activiteitService.activiteitSpecific.week3form}} <br>
+    Week 3 Summatief: {{activiteitService.activiteitSpecific.week3sum}} <br>
+    Week 4 Formatief: {{activiteitService.activiteitSpecific.week4form}} <br>
+    Week 4 Summatief: {{activiteitService.activiteitSpecific.week4sum}} <br>
+    Week 5 Formatief: {{activiteitService.activiteitSpecific.week5form}} <br>
+    Week 5 Summatief: {{activiteitService.activiteitSpecific.week5sum}} <br>
+    Week 6 Formatief: {{activiteitService.activiteitSpecific.week6form}} <br>
+    Week 6 Summatief: {{activiteitService.activiteitSpecific.week6sum}} <br>
+    Week 7 Formatief: {{activiteitService.activiteitSpecific.week7form}} <br>
+    Week 7 Summatief: {{activiteitService.activiteitSpecific.week7sum}} <br>
+    Week 8 Formatief: {{activiteitService.activiteitSpecific.week8form}} <br>
+    Week 8 Summatief: {{activiteitService.activiteitSpecific.week8sum}} <br>
+    Week 9 Formatief: {{activiteitService.activiteitSpecific.week9form}} <br>
+    Week 9 Summatief: {{activiteitService.activiteitSpecific.week9sum}} <br>
+    Week 10 Formatief: {{activiteitService.activiteitSpecific.week10form}} <br>
+    Week 10 Summatief: {{activiteitService.activiteitSpecific.week10sum}}
+  </ion-grid>
+</ion-content>
