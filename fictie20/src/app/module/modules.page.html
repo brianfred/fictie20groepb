@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Modules
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Modules</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <app-explore-container></app-explore-container>
+  <ion-grid [hidden]="moduleService.notDone">
+    ID: {{moduleService.moduleSpecific.moduleID}} <br>
+    Naam: {{moduleService.moduleSpecific.naam}} <br>
+    Opleiding: {{moduleService.moduleSpecific.opleiding}} <br>
+    Studiejaar: {{moduleService.moduleSpecific.studiejaar}} <br>
+    Fase: {{moduleService.moduleSpecific.fase}} <br>
+    Credits: {{moduleService.moduleSpecific.credits}} <br>
+    Ingangseisen: {{moduleService.moduleSpecific.ingangseisen}} <br>
+    Voorkennis: {{moduleService.moduleSpecific.voorkennis}} <br>
+    Examinator: {{moduleService.moduleSpecific.examinator}} <br>
+    Context: {{moduleService.moduleSpecific.context}} <br>
+    Competenties: {{moduleService.moduleSpecific.competenties}} <br>
+    Beroepstaken: {{moduleService.moduleSpecific.beroepstaken}} <br>
+    Algemene Kwalificaties: {{moduleService.moduleSpecific.algemeneKwalificaties}} <br>
+    Onderwerpen: {{moduleService.moduleSpecific.onderwerpen}} <br>
+    Lesmateriaal: {{moduleService.moduleSpecific.lesmateriaal}} <br>
+    Werkvormen: {{moduleService.moduleSpecific.werkvormen}} <br>
+    Toetsvormen: {{moduleService.moduleSpecific.toetsvormen}} <br>
+    Toetsprotocol: {{moduleService.moduleSpecific.toetsprotocol}} <br>
+    Rekenmodel: {{moduleService.moduleSpecific.rekenmodel}} <br>
+    Gelegenheid 1: {{moduleService.moduleSpecific.gelegenheid1}} <br>
+    Gelegenheid 2: {{moduleService.moduleSpecific.gelegenheid2}} <br>
+  </ion-grid>
+</ion-content>
