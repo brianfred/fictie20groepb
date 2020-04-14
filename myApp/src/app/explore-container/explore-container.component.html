@@ -1,4 +1,0 @@
-<ion-select [(ngModel)]='project' placeholder ='Selected: {{moduleService.moduleSpecific.moduleID}} {{moduleService.moduleSpecific.studiejaar}} {{moduleService.moduleSpecific.fase}} {{moduleService.moduleSpecific.naam}}' (ionChange)="selectModule($event.target.value)" >
-    <ion-select-option *ngFor = "let module of moduleService.moduleList">{{module.moduleID}} {{module.studiejaar}} {{module.fase}} {{module.naam}}</ion-select-option>
-</ion-select>
-  
